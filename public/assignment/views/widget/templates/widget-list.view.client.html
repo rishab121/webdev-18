@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <h2>Widget List</h2>
+
+    <div ng-repeat="widget in model.widgets">
+        <div ng-include="model.getWidgetIncludeUrl(widget.widgetType)"></div>
+    </div>
+
+    {{model.widgets}}
+
+</div>

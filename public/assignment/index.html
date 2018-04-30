@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="WamApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Theme Template for Bootstrap</title>
+
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/angular/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="views/user/controllers/login.controller.client.js"></script>
+    <script src="views/user/controllers/profile.controller.client.js"></script>
+    <script src="views/user/controllers/register.controller.client.js"></script>
+    <script src="views/website/controllers/website-list.controller.client.js"></script>
+    <script src="views/website/controllers/website-new.controller.client.js"></script>
+    <script src="views/website/controllers/website-edit.controller.client.js"></script>
+    <script src="views/widget/controllers/widget-list.controller.client.js"></script>
+    <script src="services/user.service.client.js"></script>
+    <script src="services/website.service.client.js"></script>
+    <script src="views/home/home.controller.client.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div ng-view></div>
+
+</body>
+</html>

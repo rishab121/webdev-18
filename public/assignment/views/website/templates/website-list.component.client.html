@@ -1,0 +1,26 @@
+<ul class="list-group">
+    <li class="list-group-item active">
+        <div class="row">
+            <div class="col-xs-4">Name</div>
+            <div class="col-xs-6 col-sm-3">Created</div>
+            <div class="col-sm-3 hidden-xs">Developer</div>
+            <div class="col-xs-2">
+                <a href="#!/user/{{model.userId}}/website/new" style="color:white">
+                    <span class="pull-right glyphicon glyphicon-plus"></span>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li ng-repeat="website in model.websites" class="list-group-item">
+        <div class="row">
+            <div class="col-xs-4">{{website.name}}</div>
+            <div class="col-xs-6 col-sm-3">{{website.created | date : 'medium'}}</div>
+            <div class="col-sm-3 hidden-xs">{{website.developer.username}}</div>
+            <div class="col-xs-2">
+                <a href="#!/user/{{model.userId}}/website/{{website._id}}">
+                <span class="glyphicon glyphicon-cog pull-right"></span>
+                </a>
+            </div>
+        </div>
+    </li>
+</ul>
